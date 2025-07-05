@@ -254,10 +254,10 @@ in read operation the work-load is distributed between the slaves which can be v
 ![image](https://github.com/user-attachments/assets/a4174d3a-8130-4968-b992-b2911d8dd545)
 
 in these case the master-sql sits idle:
-<div align="center">
+
 
 ![image](https://github.com/user-attachments/assets/d9006ab9-ee1f-4ac4-8819-8b2285224fea)
-</div>
+
 
 
 now again when a user is deleted / data is modified the master-sql is activated:
@@ -276,9 +276,9 @@ Step 1: Open Multiple Terminal Windows
 ```bash
 cd mysql-replication-poc/
 ```
-<div align="center">
-![image](https://github.com/user-attachments/assets/89823257-2ed7-4e8a-8ae4-71e9f8d16ca7)
-</div>
+![image](https://github.com/user-attachments/assets/e3b3f14b-c44c-4c3d-8fdd-bab9fd1495c5)
+
+
 Terminal 1 - Master Logs:
 ```bash
 docker-compose exec mysql-master sh -c 'tail -f /var/log/mysql/general.log'
